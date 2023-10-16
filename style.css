@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+#sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18%;
+  height: 100vh;
+  user-select: none;
+}
+#save {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 16px;
+  width: 16px;
+  display: none;
+  cursor: pointer;
+}
+#editor {
+  position: absolute;
+  left: 18%;
+  top: 0;
+  width: 82%;
+  height: 100vh;
+  font-size: 15px;
+  line-height: 1.2em;
+  z-index: 0;
+}
+#sidebar h1 {
+  text-align: center;
+}
+
+.file {
+  width: 100%;
+  padding: 10px;
+  padding-left: 44px;
+  box-sizing: border-box;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+.file:hover {
+  background-color: rgba(0,0,0,.06);
+}
+
+.file.selected {
+  background-color: rgba(20, 128, 255, .1);
+}
+
+#menu {
+  width: 95%;
+  max-width: 250px;
+  position: absolute;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 0 4px 4px rgba(0,0,0,.1);
+  border-radius: 3px;
+  background: white;
+  display: none;
+}
+#menu.show {
+  display: block;
+}
+#menu > div {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background .3s;
+}
+#menu > div:hover {
+  background: rgba(20, 128, 255, .1);
+}
